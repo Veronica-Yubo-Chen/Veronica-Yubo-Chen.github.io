@@ -7,18 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Floating Quick Navigation -->
+    <nav class="quick-nav" aria-label="Section navigation">
+        <a href="#about" class="qn-link">About</a>
+        <a href="#experience" class="qn-link">Experience</a>
+        <a href="#education" class="qn-link">Education</a>
+        <a href="#projects" class="qn-link">Projects</a>
+        <a href="#contact" class="qn-link">Contact</a>
+    </nav>
+
+    <!-- Floating CV Button -->
+    <!-- TODO: Add a button to download CV -->
+    <a href="cv.pdf" class="cv-button" target="_blank" aria-label="Download CV">📄 CV</a>
     <header>
         <div class="container">
             <img src="profile-photo.png" alt="Yubo Chen profile photo" class="profile-img">
             <h1>Yubo Chen (Veronica)</h1>
             <p class="subtitle"> Software Engineer | Brisbane, Australia</p>
+            
+            <!-- Contact Links -->
+            <div class="header-contact-info">
+                <a href="mailto:veronicaworkingnow@gmail.com" class="header-contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span>veronicaworkingnow@gmail.com</span>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/yubo-chen-71a78a183/" class="header-contact-item" target="_blank">
+                    <span class="contact-icon">💼</span>
+                    <span>LinkedIn</span>
+                </a>
+                
+                <a href="https://github.com/Veronica-Yubo-Chen" class="header-contact-item" target="_blank">
+                    <span class="contact-icon">🔗</span>
+                    <span>GitHub</span>
+                </a>
+                
+                <a href="tel:+61439391899" class="header-contact-item">
+                    <span class="contact-icon">📱</span>
+                    <span>+61 439 391 899</span>
+                </a>
+            </div>
         </div>
     </header>
 
-    <div class="container">
+    <div class="container" id="about">
         <!-- About Section -->
-        <section class="section">
-            <h2>About Me</h2>
+        <section class="section" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
             <div class="about-grid">
                                 <div class="about-content">
                     <div class="intro-highlight">
@@ -47,21 +82,116 @@
                         <p><em>I thrive at the intersection of research and practice, turning theory into working systems and working systems into new opportunities for discovery. Whether in the lab, in the pit, or in the cloud, I'm motivated by challenges that demand both intellectual curiosity and practical impact.</em></p>
                     </div>
                 </div>
-                <div>
-                    <h4>Quick Facts</h4>
-                    <ul>
-                        <li><strong>Location:</strong> Your City, Country</li>
-                        <li><strong>Experience:</strong> X years in [field]</li>
-                        <li><strong>Education:</strong> Your degree/certification</li>
-                        <li><strong>Languages:</strong> Languages you speak</li>
-                    </ul>
+                <div class="quick-facts-sidebar">
+                    <div class="facts-card">
+                        <h4>📊 Quick Facts</h4>
+                        <div class="facts-grid">
+                        
+
+                        <div class="fact-item">
+                            <div class="fact-icon">🏢</div>
+                            <div class="fact-content">
+                                <span class="fact-label">Company</span>
+                                <span class="fact-value">Rio Tinto</span>
+                            </div>
+                        </div>
+
+                        <div class="fact-item">
+                            <div class="fact-icon">🎓</div>
+                            <div class="fact-content">
+                                <span class="fact-label">Education</span>
+                                <span class="fact-value">MPhil in Computer Science and Engineering</span>
+                            </div>
+                        </div>
+
+                        <div class="fact-item">
+                            <div class="fact-icon">🏛️</div>
+                            <div class="fact-content">
+                                <span class="fact-label">University</span>
+                                <span class="fact-value">Queensland University of Technology</span>
+                            </div>
+                        </div>
+
+                        <div class="fact-item">
+                            <div class="fact-icon">🔬</div>
+                            <div class="fact-content">
+                                <span class="fact-label">Research Focus</span>
+                                <span class="fact-value">Computer Vision Application in Medical Imagings</span>
+                            </div>
+                        </div>
+
+                        <div class="fact-item">
+                            <div class="fact-icon">💻</div>
+                            <div class="fact-content">
+                                <span class="fact-label">Work Specialization</span>
+                                <span class="fact-value">.NET Development & Optimization Research</span>
+                            </div>
+                        </div>
+
+                        <div class="fact-item">
+                            <div class="fact-icon">🌐</div>
+                            <div class="fact-content">
+                                <span class="fact-label">Languages</span>
+                                <span class="fact-value">English, Mandarin</span>
+                            </div>
+                        </div>
+                        </div><!-- end facts-grid -->
+                    </div>
+                    <div class="sidebar-skills-card">
+                        <h4>🛠️ Skills & Technologies</h4>
+                        <div class="sidebar-skill-groups">
+                            <div class="sidebar-skill-group">
+                                <h5>Programming</h5>
+                                <ul>
+                                    <li>C# (.NET)</li>
+                                    <li>Python</li>
+                                    <li>SQL</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-skill-group">
+                                <h5>AI & Data</h5>
+                                <ul>
+                                    <li>PyTorch</li>
+                                    <li>Computer Vision</li>
+                                    <li>3D Point Clouds</li>
+                                    <li>Data Pipelines</li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-skill-group">
+                                <h5>Optimization</h5>
+                                <ul>
+                                    <li>Linear Programming</li>
+                                    <li>Heuristic Algorithms</li>
+                                    <li>Operations Research</li>
+                                    <li>System Modelling</li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-skill-group">
+                                <h5>Tools & Cloud</h5>
+                                <ul>
+                                    <li>Azure</li>
+                                    <li>Docker</li>
+                                    <li>Git / CI</li>
+                                    <li>Linux</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="exploring-strip" aria-label="Currently Exploring">
+                            <h5>Exploring</h5>
+                            <span class="explore-badge">Generative AI</span>
+                            <span class="explore-badge">Vector Databases</span>
+                            <span class="explore-badge">Approx. Nearest Neighbour</span>
+                            <span class="explore-badge">Infra-as-Code</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Experience Section -->
-        <section class="section">
-            <h2>Professional Experience</h2>
+        <section class="section" id="experience" aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Professional Experience</h2>
             
             <div class="experience-item">
                 <h3>Job Title</h3>
@@ -87,8 +217,8 @@
         </section>
 
         <!-- Education Section -->
-        <section class="section">
-            <h2>Education</h2>
+        <section class="section" id="education" aria-labelledby="education-heading">
+            <h2 id="education-heading">Education</h2>
             
             <div class="education-item">
                 <h3>Degree Name</h3>
@@ -105,46 +235,10 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section class="section">
-            <h2>Skills & Technologies</h2>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Technical Skills</h4>
-                    <ul class="skill-list">
-                        <li>Programming Language 1</li>
-                        <li>Programming Language 2</li>
-                        <li>Framework or Tool</li>
-                        <li>Software or Platform</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h4>Design & Creative</h4>
-                    <ul class="skill-list">
-                        <li>Design Software</li>
-                        <li>Creative Skill</li>
-                        <li>Design Methodology</li>
-                        <li>Creative Tool</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h4>Soft Skills</h4>
-                    <ul class="skill-list">
-                        <li>Communication</li>
-                        <li>Leadership</li>
-                        <li>Problem Solving</li>
-                        <li>Team Collaboration</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
         <!-- Projects Section -->
-        <section class="section">
-            <h2>Featured Projects</h2>
+        <section class="section" id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Featured Projects</h2>
             
             <div class="project-item">
                 <h3>Project Name 1</h3>
@@ -160,39 +254,54 @@
                 <p><strong>Technologies:</strong> List of technologies used</p>
             </div>
         </section>
-
-        <!-- Contact Section -->
-        <section class="section">
-            <h2>Get In Touch</h2>
-            
-            <div class="contact-info">
-                <a href="mailto:your.email@example.com" class="contact-item">
-                    <h4>Email</h4>
-                    <p>your.email@example.com</p>
-                </a>
-                
-                <a href="https://linkedin.com/in/yourprofile" class="contact-item" target="_blank">
-                    <h4>LinkedIn</h4>
-                    <p>Connect with me</p>
-                </a>
-                
-                <a href="https://github.com/yourusername" class="contact-item" target="_blank">
-                    <h4>GitHub</h4>
-                    <p>View my code</p>
-                </a>
-                
-                <a href="tel:+1234567890" class="contact-item">
-                    <h4>Phone</h4>
-                    <p>+1 (234) 567-8900</p>
-                </a>
-            </div>
-        </section>
     </div>
 
-    <footer>
+    <footer id="contact" aria-label="Footer">
         <div class="container">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>&copy; 2025 Yubo Chen (Veronica). All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+    // Mobile accordion for skill groups
+    (function(){
+        const mq = window.matchMedia('(max-width: 768px)');
+        function initAccordions(){
+            document.querySelectorAll('.sidebar-skill-group').forEach(group => {
+                const heading = group.querySelector('h5');
+                const list = group.querySelector('ul');
+                if(!heading || !list) return;
+                if(mq.matches){
+                    if(!heading.classList.contains('accordion-added')){
+                        heading.classList.add('accordion-added');
+                        list.style.maxHeight = '0px';
+                        list.style.overflow = 'hidden';
+                        list.style.transition = 'max-height 0.35s ease';
+                        heading.insertAdjacentHTML('beforeend','<span class="acc-indicator">+</span>');
+                        heading.style.cursor = 'pointer';
+                        heading.addEventListener('click', () => {
+                            const expanded = heading.getAttribute('data-expanded') === 'true';
+                            heading.setAttribute('data-expanded', !expanded);
+                            const indicator = heading.querySelector('.acc-indicator');
+                            if(!expanded){
+                                list.style.maxHeight = list.scrollHeight + 'px';
+                                indicator.textContent = '–';
+                            } else {
+                                list.style.maxHeight = '0px';
+                                indicator.textContent = '+';
+                            }
+                        });
+                    }
+                } else {
+                    list.style.maxHeight = 'none';
+                    const ind = heading.querySelector('.acc-indicator');
+                    if(ind) ind.remove();
+                }
+            });
+        }
+        initAccordions();
+        window.addEventListener('resize', initAccordions);
+    })();
+    </script>
 </body>
 </html>

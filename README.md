@@ -61,4 +61,4 @@ Add a short paragraph describing the features below, if you included any.
 
 #### image_title_goes_here
 
-![Put a description of your image here](./relative_path_to_file)
+![My profile image was taken for Xmas in 2024 in Chengdu in China, when I met my friend.](./profile-photo.png)

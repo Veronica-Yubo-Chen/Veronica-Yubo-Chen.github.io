@@ -59,6 +59,6 @@ Add a short paragraph describing the features below, if you included any.
 > - Any interactive/hover states.
 > - Optional: Performance or accessibility audits.
 
-#### image_title_goes_here
+#### Xmas 2024
 
 ![My profile image was taken for Xmas in 2024 in Chengdu in China, when I met my friend.](./profile-photo.png)

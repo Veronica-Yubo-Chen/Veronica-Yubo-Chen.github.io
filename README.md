@@ -1,41 +1,16 @@
-# Yubo (Veronica) Chen – Portfolio
+# Yubo (Veronica) Chen - Portfolio Task
 
-## Live Site URLs (Option B Transition)
+[My portfolio site](https://veronica-yubo-chen.github.io)
 
-Current (project Pages URL):  
-`https://veronica-yubo-chen.github.io/YuboVeronicaChen.github.io/`
+> If the link above returns 404, the GitHub Pages build may still be processing. Wait 2–3 minutes, then hard refresh (`Cmd+Shift+R`).
 
-After repository rename to `Veronica-Yubo-Chen.github.io` (short root):  
-`https://veronica-yubo-chen.github.io/`
+### Troubleshooting
 
-Both are functionally identical; only the base path changes. Keep both listed until the rename is complete and the first post‑rename build has finished (usually < 5 minutes).
+- 404: Wait a few minutes; first build can be delayed.
+- Still failing: Visit Settings → Pages and confirm the “Build and deployment” section is enabled.
+- Cache issues: Use an incognito window or: `curl -I https://veronica-yubo-chen.github.io`
 
-> If either URL returns 404 right after a change, wait 2–3 minutes then hard refresh (`Cmd+Shift+R`) or use an incognito window.
-
-### Why It Looked “Not Updated”
-GitHub Pages only rewrites to the short root domain if the repository name exactly matches `<username>.github.io`. Until rename, the longer project path remains correct behavior (not a deployment error).
-
----
-
-### Dark Mode
-Dark mode is applied if:
-1. User explicitly toggles the Theme button (persists in `localStorage` under `pref-theme`).
-2. No stored preference exists and system `prefers-color-scheme: dark` is true.
-
-Override CSS uses a `[data-theme="dark"]` attribute plus fallback media query for initial load. Component surfaces and tag pills are re-mapped to dark tokens to maintain readability.
----
-
-### Troubleshooting Quick Table
-| Symptom | Likely Cause | Fix |
-|---------|--------------|-----|
-| 404 after rename | Build pending | Wait 1–5 min then refresh |
-| Old styling | Browser cache | Hard refresh / incognito |
-| Broken assets | Wrong path after root move | Ensure relative paths (`./style.css`) |
-| Dark mode flash | No initial attribute until script runs | (Optional) Inline prefers-color-scheme guard |
-
----
-
-## Project Requirements (Tracking)
+## Project Requirements
 
 ### Content
 
@@ -71,6 +46,6 @@ Add a short paragraph describing the features below, if you included any.
 > - Any interactive/hover states.
 > - Optional: Performance or accessibility audits.
 
-#### Xmas 2024
+#### Xma
 
 ![My profile image was taken for Xmas in 2024 in Chengdu in China, when I met my friend.](./profile-photo.png)

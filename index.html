@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Cosmic layered background -->
+    <div class="cosmos" aria-hidden="true">
+        <!-- Stars will be injected via JS -->
+        <div class="planet planet-a" aria-hidden="true"></div>
+        <div class="planet planet-b" aria-hidden="true"></div>
+    </div>
+    
     <a href="#main" id="skip-link">Skip to main content</a>
     <!-- Floating Quick Navigation -->
     <nav class="quick-nav" aria-label="Section navigation" role="navigation">
@@ -18,28 +25,28 @@
         <a href="#projects" class="qn-link">Projects</a>
     </nav>
 
-    <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark mode" id="themeToggle">Dark Mode</button>
+    <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle day / night theme" id="themeToggle">Day Mode</button>
 
-    <!-- Floating CV Button -->
-    <!-- TODO: Add a button to download CV -->
     <header>
         <div class="container">
+            <div class="lp-gif-wrapper" role="img" aria-label="Animated Little Prince GIF (windy)">
+                <div class="tenor-gif-embed" data-postid="7976072" data-share-method="host" data-aspect-ratio="1.78571" data-width="100%">
+                    <a href="https://tenor.com/view/el-principito-windy-gif-7976072" rel="noopener" target="_blank">El Principito GIF</a>
+                    from <a href="https://tenor.com/search/el-gifs" rel="noopener" target="_blank">El GIFs</a>
+                </div>
+            </div>
             <img src="profile-photo.png" alt="Yubo Chen profile photo" class="profile-img">
             <h1>Yubo Chen (Veronica)</h1>
             <p class="subtitle"> Software Engineer | Brisbane, Australia</p>
-            
-            <!-- Contact Links -->
             <div class="header-contact-info">
                 <a href="mailto:veronicaworkingnow@gmail.com" class="header-contact-item">
                     <span class="contact-icon">📧</span>
                     <span>Email Me</span>
                 </a>
-                
                 <a href="https://www.linkedin.com/in/yubo-chen-71a78a183/" class="header-contact-item" target="_blank">
                     <span class="contact-icon">💼</span>
                     <span>LinkedIn</span>
                 </a>
-                
                 <a href="https://github.com/Veronica-Yubo-Chen" class="header-contact-item" target="_blank">
                     <span class="contact-icon">🔗</span>
                     <span>GitHub</span>
@@ -52,37 +59,86 @@
         </div>
     </header>
 
-    <main class="container" id="main" tabindex="-1">
-    <div id="about">
-        <!-- About Section -->
-    <section class="section" aria-labelledby="about-heading" role="region">
-            <h2 id="about-heading">About Me</h2>
+    <main class="container" id="main" tabindex="-1" role="main">
+    <!-- Profile snapshot section removed (avoid duplicate) -->
+    <!-- About Section -->
+    <section class="section about-compact about-balanced" id="about" aria-labelledby="about-heading" role="region">
+            <h2 id="about-heading" class="about-heading-xl">About Me</h2>
             <div class="about-grid">
                                 <div class="about-content">
-                    <div class="intro-highlight">
-                        <p class="lead-text">I'm a Graduate Software Engineer at <strong>Rio Tinto</strong>, where I design and optimize mining systems through .NET development, linear programming, and heuristic algorithms. My work bridges rigorous algorithmic design with the messy realities of large-scale industrial optimization — making complex systems smarter, faster, and more reliable.</p>
-                    </div>
-                    
-                    <div class="research-section">
-                        <p>Alongside my industry role, I'm completing an <strong>MPhil in Computer Science at QUT</strong>, researching deep semi-supervised, uncertainty-aware 3D point cloud models for medical imaging. My research is driven by a simple idea: applying AI not only to make industries efficient, but also to make healthcare smarter, safer, and more accessible.</p>
+                    <!-- Refreshed stacked card layout for improved readability / visual rhythm -->
+                    <div class="about-card about-intro" aria-labelledby="about-intro-heading">
+                        <h3 id="about-intro-heading" class="card-heading">Blending Engineering & Research</h3>
+                        <p class="lead-text">I'm a Graduate Software Engineer at <strong>Rio Tinto</strong>, designing & optimizing mining systems through .NET development, linear programming and heuristic algorithms. I enjoy translating abstract optimisation & systems thinking into resilient, measurable software.</p>
+                        <p>Alongside industry work I pursue an <strong>MPhil in Computer Science (QUT)</strong> focusing on semi‑supervised, uncertainty‑aware 3D point cloud models for medical imaging — applying AI where reliability truly matters.</p>
                     </div>
 
-                    <div class="passion-section">
-                        <h5>My career journey reflects a dual passion:</h5>
-                        <div class="passion-grid">
-                            <div class="passion-item">
-                                <h6>🚀 Applied Innovation</h6>
-                                <p>Enhancing real-world systems at scale through software engineering, cloud technologies, and optimization research.</p>
+                    <div class="about-card pillars-card" aria-labelledby="about-pillars-heading">
+                        <h4 id="about-pillars-heading" class="mini-heading">Core Pillars</h4>
+                        <div class="pillar-grid" role="list">
+                            <div class="pillar" role="listitem">
+                                <div class="pillar-icon" aria-hidden="true">🚀</div>
+                                <div class="pillar-body">
+                                    <h5>Applied Innovation</h5>
+                                    <p>Building optimisation features & tooling that improve planning quality, runtime & maintainability in real systems.</p>
+                                </div>
                             </div>
-                            <div class="passion-item">
-                                <h6>🔬 Academic Depth</h6>
-                                <p>Exploring AI methods that push the boundaries of what's possible in medical imaging and beyond.</p>
+                            <div class="pillar" role="listitem">
+                                <div class="pillar-icon" aria-hidden="true">🔬</div>
+                                <div class="pillar-body">
+                                    <h5>Research Depth</h5>
+                                    <p>Exploring trustworthy AI for medical imaging: uncertainty, data efficiency & robust representation learning.</p>
+                                </div>
+                            </div>
+                            <div class="pillar" role="listitem">
+                                <div class="pillar-icon" aria-hidden="true">🧭</div>
+                                <div class="pillar-body">
+                                    <h5>Systems Thinking</h5>
+                                    <p>Linking algorithmic design with user workflows, data lifecycle & sustainable software architecture.</p>
+                                </div>
+                            </div>
+                            <div class="pillar" role="listitem">
+                                <div class="pillar-icon" aria-hidden="true">🤝</div>
+                                <div class="pillar-body">
+                                    <h5>Collaboration</h5>
+                                    <p>Working across engineering, research & product stakeholders to align technical depth with impact.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="closing-statement">
-                        <p><em>I thrive at the intersection of research and practice, turning theory into working systems and working systems into new opportunities for discovery. Whether in the lab, in the pit, or in the cloud, I'm motivated by challenges that demand both intellectual curiosity and practical impact.</em></p>
+                    <div class="about-card values-card" aria-labelledby="about-values-heading">
+                        <h4 id="about-values-heading" class="mini-heading">Core Values</h4>
+                        <div class="values-grid" role="list">
+                            <div class="value" role="listitem"><span class="v-icon" aria-hidden="true">✨</span><span class="v-text">Clarity over complexity</span></div>
+                            <div class="value" role="listitem"><span class="v-icon" aria-hidden="true">🧪</span><span class="v-text">Measured experimentation</span></div>
+                            <div class="value" role="listitem"><span class="v-icon" aria-hidden="true">🛠️</span><span class="v-text">Practical craftsmanship</span></div>
+                            <div class="value" role="listitem"><span class="v-icon" aria-hidden="true">🌱</span><span class="v-text">Sustainable growth</span></div>
+                            <div class="value" role="listitem"><span class="v-icon" aria-hidden="true">🤍</span><span class="v-text">User empathy</span></div>
+                            <div class="value" role="listitem"><span class="v-icon" aria-hidden="true">📏</span><span class="v-text">Evidence guided</span></div>
+                        </div>
+                    </div>
+
+                    <div class="about-card metrics-card" aria-label="Snapshot metrics">
+                        <ul class="metric-row" role="list">
+                            <li class="metric" role="listitem"><span class="metric-value">5+</span><span class="metric-label">Core Domains Touched<br><small>Optimization · CV · Data</small></span></li>
+                            <li class="metric" role="listitem"><span class="metric-value">3</span><span class="metric-label">Research Papers<br><small>AI & Imaging</small></span></li>
+                            <li class="metric" role="listitem"><span class="metric-value">∞</span><span class="metric-label">Curiosity<br><small>Always exploring</small></span></li>
+                            <li class="metric" role="listitem"><span class="metric-value">4</span><span class="metric-label">Optimisation Prototypes<br><small>Working on</small></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="about-card outside-card" aria-labelledby="about-outside-heading">
+                        <h4 id="about-outside-heading" class="mini-heading">Outside Work</h4>
+                        <p>I recharge through sketching stylised characters, exploring Brisbane’s independent coffee spots, and long evening walks that spark new optimisation or model evaluation ideas.</p>
+                    </div>
+
+                    <div class="about-card quote-card" aria-labelledby="about-quote-heading">
+                        <h4 id="about-quote-heading" class="visually-hidden">Motivation</h4>
+                        <blockquote>
+                            <p>I thrive at the intersection of research and practice — turning theory into working systems and production constraints into new research questions.</p>
+                            <cite>— Veronica</cite>
+                        </blockquote>
                     </div>
                 </div>
                 <div class="quick-facts-sidebar">
@@ -202,9 +258,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </section>
 
-        <!-- Experience Section -->
+    <!-- Experience Section -->
     <section class="section" id="experience" aria-labelledby="experience-heading" role="region">
             <h2 id="experience-heading">Professional Experience</h2>
             <div class="experience-timeline">
@@ -373,52 +429,105 @@
     </footer>
 
     <script>
-    // Dark mode toggle with persistence
+    // Theme toggle (night <-> day) + persistence
     (function(){
         const btn = document.getElementById('themeToggle');
-        const stored = localStorage.getItem('pref-theme');
-        if(stored){
-            if(stored === 'dark') { document.documentElement.setAttribute('data-theme','dark'); btn.setAttribute('aria-pressed','true'); btn.textContent='Light Mode'; }
-        } else if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-            document.documentElement.setAttribute('data-theme','dark'); btn.setAttribute('aria-pressed','true'); btn.textContent='Light Mode';
+        const KEY = 'lp-theme';
+        const stored = localStorage.getItem(KEY);
+        function apply(theme){
+            if(theme === 'day') { document.documentElement.setAttribute('data-theme','day'); btn.textContent='Night Mode'; btn.setAttribute('aria-pressed','true'); }
+            else { document.documentElement.removeAttribute('data-theme'); btn.textContent='Day Mode'; btn.setAttribute('aria-pressed','false'); }
         }
+        apply(stored);
         btn.addEventListener('click', () => {
-            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-            if(isDark){
-                document.documentElement.removeAttribute('data-theme');
-                localStorage.setItem('pref-theme','light');
-                btn.setAttribute('aria-pressed','false');
-                btn.textContent='Dark Mode';
-            } else {
-                document.documentElement.setAttribute('data-theme','dark');
-                localStorage.setItem('pref-theme','dark');
-                btn.setAttribute('aria-pressed','true');
-                btn.textContent='Light Mode';
-            }
+            const day = document.documentElement.getAttribute('data-theme') === 'day';
+            const next = day ? 'night' : 'day';
+            if(next==='day') localStorage.setItem(KEY,'day'); else localStorage.removeItem(KEY);
+            apply(next==='day'?'day':null);
         });
     })();
 
-    // Active section highlighting via IntersectionObserver
+    // Starfield generation
+    (function(){
+        const container = document.querySelector('.cosmos');
+        if(!container) return;
+        const STAR_COUNT = 140; // Adjust for density
+        const frag = document.createDocumentFragment();
+        for(let i=0;i<STAR_COUNT;i++){
+            const s = document.createElement('div');
+            const size = (Math.random()*2 + 1).toFixed(2)+'px';
+            s.className='star';
+            s.style.setProperty('--sz', size);
+            s.style.left = (Math.random()*100).toFixed(3)+'%';
+            s.style.top = (Math.random()*100).toFixed(3)+'%';
+            s.style.setProperty('--op', (Math.random()*0.5 + 0.4).toFixed(2));
+            s.style.setProperty('--twinkleDur', (Math.random()*8 + 6).toFixed(2));
+            s.style.setProperty('--twinkleDelay', (Math.random()*8).toFixed(2));
+            frag.appendChild(s);
+        }
+        container.appendChild(frag);
+
+        // Shooting star scheduler
+        function shoot(){
+            const st = document.createElement('div');
+            st.className='shooting-star';
+            const x = Math.random()*window.innerWidth*0.4 - 150; // start region left-ish
+            const y = Math.random()*window.innerHeight*0.3 - 150; // start region top
+            st.style.setProperty('--sx', x+'px');
+            st.style.setProperty('--sy', y+'px');
+            container.appendChild(st);
+            setTimeout(()=> st.remove(), 1900);
+        }
+        let interval = setInterval(shoot, 6500 + Math.random()*3000);
+        // Respect reduced motion
+        const rm = window.matchMedia('(prefers-reduced-motion: reduce)');
+        function handleRM(){
+            if(rm.matches){ clearInterval(interval); }
+            else if(!interval){ interval = setInterval(shoot, 6500 + Math.random()*3000); }
+        }
+        rm.addEventListener('change', handleRM);
+    })();
+
+    // Active section highlighting via IntersectionObserver (improved: pick highest intersection ratio)
     (function(){
         const links = Array.from(document.querySelectorAll('.quick-nav .qn-link'));
-        const map = new Map(links.map(l => [l.getAttribute('href').replace('#',''), l]));
-        const opts = { root:null, rootMargin:'0px 0px -60% 0px', threshold:0.25 };
-        const observer = new IntersectionObserver(entries => {
+        const map = new Map(links.map(l => [l.getAttribute('href').slice(1), l]));
+        const activeClass = 'active';
+        let visible = {};
+        let ticking = false;
+        function setActive(){
+            ticking = false;
+            // Choose section with largest intersection ratio currently > 0
+            let bestId = null; let bestRatio = 0;
+            for(const id in visible){
+                const ratio = visible[id];
+                if(ratio > bestRatio){ bestRatio = ratio; bestId = id; }
+            }
+            if(bestId){
+                links.forEach(a => a.classList.remove(activeClass));
+                const link = map.get(bestId);
+                if(link) link.classList.add(activeClass);
+            }
+        }
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if(entry.isIntersecting){
-                    const id = entry.target.id;
-                    links.forEach(a => a.classList.remove('active'));
-                    const link = map.get(id);
-                    if(link) link.classList.add('active');
-                }
+                const id = entry.target.id;
+                if(entry.isIntersecting) visible[id] = entry.intersectionRatio; else delete visible[id];
             });
-        }, opts);
+            if(!ticking){
+                ticking = true;
+                requestAnimationFrame(setActive);
+            }
+        }, { root:null, rootMargin:'0px 0px -55% 0px', threshold:[0,0.1,0.25,0.5,0.75,1] });
         ['about','experience','education','projects','contact'].forEach(id => {
             const el = document.getElementById(id);
             if(el) observer.observe(el);
         });
+        // Initialize state on load
+        window.addEventListener('load', () => setTimeout(()=>setActive(), 150));
     })();
-    // Mobile accordion for skill groups
+
+    // Mobile accordion for skill groups (unchanged logic, adapted for theme)
     (function(){
         const mq = window.matchMedia('(max-width: 768px)');
         function initAccordions(){
@@ -432,11 +541,15 @@
                         list.style.maxHeight = '0px';
                         list.style.overflow = 'hidden';
                         list.style.transition = 'max-height 0.35s ease';
-                        heading.insertAdjacentHTML('beforeend','<span class="acc-indicator">+</span>');
-                        heading.style.cursor = 'pointer';
-                        heading.addEventListener('click', () => {
-                            const expanded = heading.getAttribute('data-expanded') === 'true';
-                            heading.setAttribute('data-expanded', !expanded);
+                        heading.insertAdjacentHTML('beforeend','<span class="acc-indicator" aria-hidden="true">+</span>');
+                        heading.setAttribute('role','button');
+                        heading.setAttribute('tabindex','0');
+                        heading.setAttribute('aria-expanded','false');
+                        heading.addEventListener('click', toggle);
+                        heading.addEventListener('keydown', e=>{ if(e.key==='Enter' || e.key===' ') { e.preventDefault(); toggle.call(heading); } });
+                        function toggle(){
+                            const expanded = heading.getAttribute('aria-expanded')==='true';
+                            heading.setAttribute('aria-expanded', String(!expanded));
                             const indicator = heading.querySelector('.acc-indicator');
                             if(!expanded){
                                 list.style.maxHeight = list.scrollHeight + 'px';
@@ -445,17 +558,28 @@
                                 list.style.maxHeight = '0px';
                                 indicator.textContent = '+';
                             }
-                        });
+                        }
                     }
                 } else {
                     list.style.maxHeight = 'none';
                     const ind = heading.querySelector('.acc-indicator');
                     if(ind) ind.remove();
+                    heading.removeAttribute('role');
+                    heading.removeAttribute('tabindex');
+                    heading.removeAttribute('aria-expanded');
                 }
             });
         }
         initAccordions();
         window.addEventListener('resize', initAccordions);
+    })();
+    // Inject Tenor embed script once (if not already present)
+    (function(){
+        if(document.querySelector('script[src*="tenor.com/embed.js"]')) return;
+        const s = document.createElement('script');
+        s.src = 'https://tenor.com/embed.js';
+        s.async = true;
+        document.body.appendChild(s);
     })();
     </script>
 </body>

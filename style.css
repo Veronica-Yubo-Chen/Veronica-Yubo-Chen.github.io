@@ -363,6 +363,39 @@ header .profile-img { width: 160px; height: 168px; border-radius: 50%; object-fi
 .experience-item::after, .education-item::after, .project-item::after { left:-18px; }
 }
 
+/* Day theme refinements for timeline visibility and card contrast */
+[data-theme='day'] .experience-timeline::before,
+[data-theme='day'] .education-timeline::before,
+[data-theme='day'] .projects-timeline::before {
+  background: linear-gradient(to bottom, rgba(210,121,5,0.35), rgba(210,121,5,0.12));
+}
+
+[data-theme='day'] .experience-item,
+[data-theme='day'] .education-item,
+[data-theme='day'] .project-item {
+  border-color: rgba(0,0,0,0.12);
+}
+
+[data-theme='day'] .experience-item:hover,
+[data-theme='day'] .education-item:hover,
+[data-theme='day'] .project-item:hover {
+  background: linear-gradient(145deg, rgba(0,0,0,0.04), rgba(0,0,0,0.02));
+}
+
+[data-theme='day'] .experience-item::after,
+[data-theme='day'] .education-item::after,
+[data-theme='day'] .project-item::after {
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.12), 0 0 10px -2px var(--lp-accent);
+}
+
+[data-theme='day'] .experience-item ul li,
+[data-theme='day'] .project-points li,
+[data-theme='day'] .pub-item,
+[data-theme='day'] .award-item {
+  background: rgba(0,0,0,0.04);
+  border-color: rgba(0,0,0,0.12);
+}
+
 /* [10] Tag Lists & Badges */
 ul { list-style: none; padding:0; margin:0; }
 .exp-tags span, .edu-tags span, .project-tags span, .explore-badge, .fact-item, .sidebar-skill-group li { background: rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); padding:.45rem .75rem; font-size:.6rem; letter-spacing:.6px; border-radius: 40px; display:inline-flex; align-items:center; gap:4px; color: var(--lp-text-main); text-transform: uppercase; font-weight:600; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); margin: .25rem .35rem .25rem 0; }

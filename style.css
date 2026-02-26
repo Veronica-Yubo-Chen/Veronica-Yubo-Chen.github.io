@@ -456,7 +456,11 @@ header .profile-img {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: .55rem;
+    row-gap: .35rem;
+    max-width: min(96vw, 1040px);
     background: rgba(15,23,40,0.55);
     padding: .55rem .85rem;
     border-radius: 60px;
@@ -468,11 +472,11 @@ header .profile-img {
 }
 .qn-link {
     color: var(--lp-text-soft);
-    font-size: .7rem;
+    font-size: .64rem;
     letter-spacing: .8px;
     text-transform: uppercase;
     font-weight: 600;
-    padding: .45rem .75rem;
+    padding: .42rem .62rem;
     border-radius: 40px;
     transition: background var(--transition-base), color .3s ease;
 }
@@ -555,6 +559,52 @@ header .profile-img {
 .section h2 { color: var(--lp-accent-alt); }
 .section p,
 .section li { color: var(--lp-text-soft); }
+
+/* New content sections: summary + skills + standalone publications/awards */
+.summary-card {
+    background: linear-gradient(145deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+    border: 1px solid rgba(255,255,255,0.13);
+    border-radius: 18px;
+    padding: 1rem 1.05rem;
+}
+.summary-card p:last-child {
+    margin-bottom: 0;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .9rem;
+}
+.skill-domain {
+    background: linear-gradient(145deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+    border: 1px solid rgba(255,255,255,0.13);
+    border-radius: 18px;
+    padding: .95rem 1rem .9rem;
+}
+.skill-domain h3 {
+    font-size: .95rem;
+    margin-bottom: .4rem;
+}
+.skill-domain p {
+    font-size: .82rem;
+    margin-bottom: 0;
+}
+.publications-list,
+.awards-list {
+    display: grid;
+    gap: .65rem;
+}
+@media (max-width: 900px){
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 700px){
+    .summary-card,
+    .skill-domain {
+        padding: .85rem .82rem;
+    }
+}
 
 /* [7] About Layout (two-column balanced) */
 .about-grid {
@@ -1339,6 +1389,11 @@ ul {
 }
 [data-theme='day'] .explore-badge { background: rgba(0,0,0,0.06); }
 [data-theme='day'] .explore-badge:hover { background: rgba(0,0,0,0.1); }
+[data-theme='day'] .summary-card,
+[data-theme='day'] .skill-domain {
+    background: rgba(255,255,255,0.63);
+    border-color: rgba(0,0,0,0.12);
+}
 
 /* [12] Publications / Awards */
 .pub-item, .award-item {
@@ -1482,4 +1537,3 @@ footer::before {
 }
 .contact-icon { font-size:.9rem; }
 @media (max-width:680px){ .header-contact-item span:last-child { display:none; } }
-

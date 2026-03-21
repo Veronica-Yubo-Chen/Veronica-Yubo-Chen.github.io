@@ -1,7 +1,6 @@
 import { ThemeProvider } from './hooks/useTheme';
 import Cosmos from './components/Cosmos';
 import QuickNav from './components/QuickNav';
-import ThemeToggle from './components/ThemeToggle';
 import Header from './components/Header';
 import AboutSection from './components/AboutSection';
 import SummarySection from './components/SummarySection';
@@ -19,7 +18,6 @@ export default function App() {
       <Cosmos />
       <a href="#main" id="skip-link">Skip to main content</a>
       <QuickNav />
-      <ThemeToggle />
       <Header />
 
       <main className="container" id="main" tabIndex={-1} role="main">

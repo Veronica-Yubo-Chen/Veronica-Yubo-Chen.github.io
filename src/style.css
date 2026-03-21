@@ -457,10 +457,8 @@ header .profile-img {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
     gap: .55rem;
-    row-gap: .35rem;
     max-width: min(96vw, 1040px);
     background: rgba(15,23,40,0.55);
     padding: .55rem .85rem;
@@ -470,6 +468,14 @@ header .profile-img {
     box-shadow: var(--lp-shadow-soft);
     border: 1px solid var(--lp-panel-border);
     z-index: 20;
+}
+.qn-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .55rem;
+    row-gap: .35rem;
+    flex: 1;
 }
 .qn-link {
     color: var(--lp-text-soft);
@@ -494,22 +500,17 @@ header .profile-img {
 }
 
 .theme-toggle {
-    position: fixed;
-    right: 14px;
-    top: 14px;
-    z-index: 30;
     background: linear-gradient(135deg,var(--lp-panel-bg),rgba(255,255,255,.07));
     color: var(--lp-accent-alt);
     font-size: .65rem;
     font-weight: 600;
     letter-spacing: .8px;
-    padding: .6rem 1rem;
+    padding: .42rem .8rem;
     border-radius: 40px;
     border: 1px solid var(--lp-panel-border);
     cursor: pointer;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: var(--lp-shadow-soft);
+    white-space: nowrap;
+    flex-shrink: 0;
     transition: background var(--transition-base), color .35s ease, transform .35s ease;
 }
 .theme-toggle:hover,
@@ -1493,6 +1494,10 @@ footer::before {
         grid-template-columns: 1fr;
     }
     .quick-nav {
+        flex-wrap: nowrap;
+        row-gap: .35rem;
+    }
+    .qn-links {
         flex-wrap: wrap;
         row-gap: .35rem;
     }
@@ -1510,10 +1515,8 @@ footer::before {
         flex-wrap: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        justify-content: flex-start;
         gap: .35rem;
         padding: .45rem .65rem;
-        border-radius: 16px;
         max-width: 100vw;
         left: 0;
         right: 0;
@@ -1525,6 +1528,19 @@ footer::before {
     .quick-nav::-webkit-scrollbar {
         display: none; /* Chrome/Safari */
     }
+    .qn-links {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: .35rem;
+        flex: 1;
+        min-width: 0;
+        scrollbar-width: none;
+    }
+    .qn-links::-webkit-scrollbar {
+        display: none;
+    }
     .qn-link {
         white-space: nowrap;
         flex-shrink: 0;
@@ -1532,13 +1548,10 @@ footer::before {
         padding: .35rem .55rem;
     }
     .theme-toggle {
-        position: fixed;
-        top: 0;
-        right: 0;
-        border-radius: 0 0 0 12px;
-        padding: .45rem .7rem;
-        font-size: .58rem;
-        z-index: 31;
+        flex-shrink: 0;
+        padding: .35rem .6rem;
+        font-size: .55rem;
+        border-radius: 20px;
     }
     header {
         padding: 3.8rem 0 1.2rem;

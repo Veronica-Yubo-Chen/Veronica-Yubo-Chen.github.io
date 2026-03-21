@@ -1543,6 +1543,21 @@ footer::before {
     header {
         padding: 3.8rem 0 1.2rem;
     }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    .section {
+        padding: 1.2rem 1rem;
+        border-radius: 18px;
+        margin: 1.6rem 0;
+    }
+    .lp-gif-wrapper {
+        width: min(320px, 90%);
+    }
+    header .profile-img {
+        width: 120px;
+        height: 126px;
+    }
 }
 
 /* Reduced Motion Preference */

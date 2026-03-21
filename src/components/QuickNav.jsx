@@ -12,9 +12,8 @@ export default function QuickNav() {
     const container = linksRef.current;
     const activeEl = container.querySelector('.qn-link.active');
     if (!activeEl) return;
-    // Scroll the container so the active link is centered horizontally
-    const scrollTarget = activeEl.offsetLeft - container.offsetWidth / 2 + activeEl.offsetWidth / 2;
-    container.scrollTo({ left: scrollTarget, behavior: 'smooth' });
+    const scrollTarget = activeEl.offsetLeft - container.clientWidth / 2 + activeEl.offsetWidth / 2;
+    container.scrollTo({ left: Math.max(0, scrollTarget), behavior: 'smooth' });
   }, [activeId]);
 
   return (

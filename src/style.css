@@ -1513,8 +1513,7 @@ footer::before {
 
     .quick-nav {
         flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        overflow: hidden;
         gap: .35rem;
         padding: .45rem .65rem;
         max-width: 100vw;
@@ -1523,10 +1522,6 @@ footer::before {
         transform: none;
         top: 0;
         border-radius: 0;
-        scrollbar-width: none; /* Firefox */
-    }
-    .quick-nav::-webkit-scrollbar {
-        display: none; /* Chrome/Safari */
     }
     .qn-links {
         display: flex;

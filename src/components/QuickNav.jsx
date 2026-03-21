@@ -9,10 +9,12 @@ export default function QuickNav() {
 
   useEffect(() => {
     if (!activeId || !linksRef.current) return;
-    const activeEl = linksRef.current.querySelector('.qn-link.active');
-    if (activeEl) {
-      activeEl.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
-    }
+    const container = linksRef.current;
+    const activeEl = container.querySelector('.qn-link.active');
+    if (!activeEl) return;
+    // Scroll the container so the active link is centered horizontally
+    const scrollTarget = activeEl.offsetLeft - container.offsetWidth / 2 + activeEl.offsetWidth / 2;
+    container.scrollTo({ left: scrollTarget, behavior: 'smooth' });
   }, [activeId]);
 
   return (

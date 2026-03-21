@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Yubo (Veronica) Chen – Applied AI/ML Engineer building production LLM systems across Azure and AWS, with strengths in evaluation, observability, and trustworthy AI research.">
+    <meta name="theme-color" content="#d05adf">
+    <title>Yubo Chen (Veronica) - Applied AI/ML Engineer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cosmic layered background -->
+    <div class="cosmos" aria-hidden="true">
+        <!-- Stars will be injected via JS -->
+        <div class="planet planet-a" aria-hidden="true"></div>
+        <div class="planet planet-b" aria-hidden="true"></div>
+    </div>
+    
+    <a href="#main" id="skip-link">Skip to main content</a>
+    <!-- Floating Quick Navigation -->
+    <nav class="quick-nav" aria-label="Section navigation" role="navigation">
+        <a href="#about" class="qn-link">About</a>
+        <a href="#summary" class="qn-link">Summary</a>
+        <a href="#skills" class="qn-link">Skills</a>
+        <a href="#experience" class="qn-link">Experience</a>
+        <a href="#education" class="qn-link">Education</a>
+        <a href="#publications" class="qn-link">Publications</a>
+        <a href="#projects" class="qn-link">Projects</a>
+        <a href="#awards" class="qn-link">Awards</a>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle day / night theme" id="themeToggle">Day Mode</button>
+
+    <header>
+        <div class="container">
+            <div class="lp-gif-wrapper" role="img" aria-label="Animated Little Prince GIF (windy)">
+                <div class="tenor-gif-embed" data-postid="7976072" data-share-method="host" data-aspect-ratio="1.78571" data-width="100%">
+                    <a href="https://tenor.com/view/el-principito-windy-gif-7976072" rel="noopener" target="_blank">El Principito GIF</a>
+                    from <a href="https://tenor.com/search/el-gifs" rel="noopener" target="_blank">El GIFs</a>
+                </div>
+            </div>
+            <img src="profile-photo.png" alt="Yubo Chen profile photo" class="profile-img">
+            <h1>Yubo Chen (Veronica)</h1>
+            <p class="subtitle">Applied AI/ML Engineer | Brisbane, Australia</p>
+            <div class="header-contact-info">
+                <a href="mailto:veronicaworkingnow@gmail.com" class="header-contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span>Email Me</span>
+                </a>
+                <a href="https://www.linkedin.com/in/yubo-chen-71a78a183/" class="header-contact-item" target="_blank">
+                    <span class="contact-icon">💼</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Veronica-Yubo-Chen" class="header-contact-item" target="_blank">
+                    <span class="contact-icon">🔗</span>
+                    <span>GitHub</span>
+                </a>
+                <a href="Yubo_Chen_Resume.pdf" class="header-contact-item" download>
+                    <span class="contact-icon">📄</span>
+                    <span>Download CV</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" id="main" tabindex="-1" role="main">
+    <!-- Profile snapshot section removed (avoid duplicate) -->
+    <!-- About Section -->
+    <section class="section about-compact about-balanced" id="about" aria-labelledby="about-heading" role="region">
+            <h2 id="about-heading" class="about-heading-xl">About Me</h2>
+            <div class="about-grid">
+                                <div class="about-content">
+                    <!-- Refreshed stacked card layout for improved readability / visual rhythm -->
+                    <div class="about-card about-intro" aria-labelledby="about-intro-heading">
+                        <h3 id="about-intro-heading" class="card-heading">Applied AI/ML Engineering with Research Depth</h3>
+                        <p class="lead-text">I am an Applied AI/ML Engineer at <strong>Rio Tinto</strong>, building <span class="hl">production LLM applications</span> across Azure and AWS — including retrieval-grounded Q&amp;A, document summarisation, agentic chat workflows, and interactive summary refinement — using <strong>React</strong>, async <strong>Python/Quart</strong>, <strong>Azure OpenAI</strong>, <strong>Azure AI Search</strong>, and <strong>LangGraph</strong>. My delivery focus is <span class="hl">reliability</span>: evaluation coverage, regression checks, tracing, and operational readiness.</p>
+                        <p>I bring a systems and optimisation background from <strong>C#/.NET</strong> and operations research work, plus an <strong>MPhil at QUT</strong> on uncertainty-aware medical imaging AI. I use this blend to ship practical ML systems that are <span class="hl">measurable, traceable, and maintainable</span>.</p>
+                    </div>
+
+                    <div class="about-card pillars-card" aria-labelledby="about-pillars-heading">
+                        <h4 id="about-pillars-heading" class="mini-heading">Core Pillars</h4>
+                        <div class="pillar-grid" role="list">
+                            <div class="pillar" role="listitem">
+                                <div class="pillar-icon" aria-hidden="true">🚀</div>
+                                <div class="pillar-body">
+                                    <h5>Production LLM Delivery</h5>
+                                    <p>Shipping internal GenAI tools with retrieval grounding, prompt control, and repeatable deployment workflows.</p>
+                                </div>
+                            </div>
+                            <div class="pillar" role="listitem">
+                                <div class="pillar-icon" aria-hidden="true">🔬</div>
+                                <div class="pillar-body">
+                                    <h5>Evaluation and Trust</h5>
+                                    <p>Implementing Arize tracing and offline evaluations to monitor quality drift and support safe iteration.</p>
+                                </div>
+                            </div>
+                            <div class="pillar" role="listitem">
+                                <div class="pillar-icon" aria-hidden="true">🧭</div>
+                                <div class="pillar-body">
+                                    <h5>Systems Thinking</h5>
+                                    <p>Connecting data flow, retrieval quality, CI/CD, and observability into reliable AI services.</p>
+                                </div>
+                            </div>
+                            <div class="pillar" role="listitem">
+                                <div class="pillar-icon" aria-hidden="true">🤝</div>
+                                <div class="pillar-body">
+                                    <h5>Cross-domain Collaboration</h5>
+                                    <p>Working across engineering, data, and platform teams to move prototypes into usable products.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card values-card" aria-labelledby="about-values-heading">
+                        <h4 id="about-values-heading" class="mini-heading">Core Values</h4>
+                        <div class="values-grid" role="list">
+                            <div class="value" role="listitem"><span class="v-icon" aria-hidden="true">✨</span><span class="v-text">Clarity over complexity</span></div>
+                            <div class="value" role="listitem"><span class="v-icon" aria-hidden="true">🧪</span><span class="v-text">Measured experimentation</span></div>
+                            <div class="value" role="listitem"><span class="v-icon" aria-hidden="true">🛠️</span><span class="v-text">Practical craftsmanship</span></div>
+                            <div class="value" role="listitem"><span class="v-icon" aria-hidden="true">🌱</span><span class="v-text">Sustainable growth</span></div>
+                            <div class="value" role="listitem"><span class="v-icon" aria-hidden="true">🤍</span><span class="v-text">User empathy</span></div>
+                            <div class="value" role="listitem"><span class="v-icon" aria-hidden="true">📏</span><span class="v-text">Evidence guided</span></div>
+                        </div>
+                    </div>
+
+                    <div class="about-card metrics-card" aria-label="Snapshot metrics">
+                        <ul class="metric-row" role="list">
+                            <li class="metric" role="listitem"><span class="metric-value">3</span><span class="metric-label">Rotations Delivered<br><small>Software · Optimisation · Applied ML</small></span></li>
+                            <li class="metric" role="listitem"><span class="metric-value">3</span><span class="metric-label">Selected Publications<br><small>AI &amp; Medical Imaging</small></span></li>
+                            <li class="metric" role="listitem"><span class="metric-value">2</span><span class="metric-label">Cloud Platforms<br><small>Azure · AWS</small></span></li>
+                            <li class="metric" role="listitem"><span class="metric-value">24/7</span><span class="metric-label">Delivery Mindset<br><small>Quality, reliability, impact</small></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="about-card quote-card" aria-labelledby="about-quote-heading">
+                        <h4 id="about-quote-heading" class="visually-hidden">Motivation</h4>
+                        <blockquote>
+                            <p>I turn research discipline into production engineering habits so AI systems remain useful after launch.</p>
+                            <cite>— Veronica</cite>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="quick-facts-sidebar">
+                    <div class="facts-card">
+                        <h4>📊 Quick Facts</h4>
+                        <div class="facts-grid">
+                        
+
+                        <div class="fact-item">
+                            <div class="fact-icon">🏢</div>
+                            <div class="fact-content">
+                                <span class="fact-label">Current Role</span>
+                                <span class="fact-value">Graduate IS&amp;T Engineer (Applied AI/ML)</span>
+                            </div>
+                        </div>
+
+                        <div class="fact-item">
+                            <div class="fact-icon">☁️</div>
+                            <div class="fact-content">
+                                <span class="fact-label">Cloud Stack</span>
+                                <span class="fact-value">Azure + AWS</span>
+                            </div>
+                        </div>
+
+                        <div class="fact-item">
+                            <div class="fact-icon">📈</div>
+                            <div class="fact-content">
+                                <span class="fact-label">LLM Focus</span>
+                                <span class="fact-value">RAG, Evaluation, Monitoring</span>
+                            </div>
+                        </div>
+
+                        <div class="fact-item">
+                            <div class="fact-icon">🔬</div>
+                            <div class="fact-content">
+                                <span class="fact-label">Research Degree</span>
+                                <span class="fact-value">MPhil (Biomedical Engineering &amp; Computer Science)</span>
+                            </div>
+                        </div>
+
+                        <div class="fact-item">
+                            <div class="fact-icon">🏛️</div>
+                            <div class="fact-content">
+                                <span class="fact-label">University</span>
+                                <span class="fact-value">Queensland University of Technology</span>
+                            </div>
+                        </div>
+
+                        <div class="fact-item">
+                            <div class="fact-icon">🌐</div>
+                            <div class="fact-content">
+                                <span class="fact-label">Languages</span>
+                                <span class="fact-value">English, Mandarin</span>
+                            </div>
+                        </div>
+                        </div><!-- end facts-grid -->
+
+                    <!-- Skills and technologies -->
+                    </div>
+                    <div class="sidebar-skills-card">
+                        <h4>🛠️ Skills &amp; Technologies</h4>
+                        <div class="sidebar-skill-groups">
+                            <div class="sidebar-skill-group">
+                                <h5>Programming</h5>
+                                <ul>
+                                    <li>C# (.NET)</li>
+                                    <li>Python</li>
+                                    <li>Quart / FastAPI</li>
+                                    <li>Node.js</li>
+                                    <li>React.js</li>
+                                    <li>Django</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-skill-group">
+                                <h5>AI &amp; Data</h5>
+                                <ul>
+                                    <li>PyTorch</li>
+                                    <li>TensorFlow</li>
+                                    <li>Hugging Face</li>
+                                    <li>LangGraph</li>
+                                    <li>RAG / Azure AI Search</li>
+                                    <li>Arize Phoenix</li>
+                                    <li>OpenTelemetry</li>
+                                    <li>Prompt Engineering</li>
+                                    <li>Data Pipelines</li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-skill-group">
+                                <h5>Optimization</h5>
+                                <ul>
+                                    <li>Linear Programming</li>
+                                    <li>Heuristic Algorithms</li>
+                                    <li>Operations Research</li>
+                                    <li>System Modelling</li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-skill-group">
+                                <h5>Tools &amp; Cloud</h5>
+                                <ul>
+                                    <li>GitHub Actions</li>
+                                    <li>Docker</li>
+                                    <li>Azure (OpenAI · AI Search · Cosmos DB)</li>
+                                    <li>AWS</li>
+                                    <li>pytest / CI-CD</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="exploring-strip" aria-label="Currently Exploring">
+                            <h5>Exploring</h5>
+                            <span class="explore-badge">Agentic Workflows</span>
+                            <span class="explore-badge">LLM Evaluation</span>
+                            <span class="explore-badge">Vision Language Models</span>
+                            <span class="explore-badge">Vector Databases</span>
+                            <span class="explore-badge">Grounded Generation</span>
+                            <span class="explore-badge">Optimization Engineering</span>
+                            <span class="explore-badge">Infra-as-Code</span>
+                            <span class="explore-badge">MLOps</span>
+                            <span class="explore-badge">DataOps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Professional Summary Section -->
+    <section class="section" id="summary" aria-labelledby="summary-heading" role="region">
+            <h2 id="summary-heading">Professional Summary</h2>
+            <div class="summary-card">
+                <p>Applied AI/ML Engineer building <span class="hl">production LLM systems</span> on <strong>Azure</strong> and <strong>AWS</strong>, including retrieval-grounded Q&amp;A, document summarisation, agentic workflows, and interactive summary refinement. I deliver measurable quality through <strong>Arize Phoenix</strong> / <strong>OpenTelemetry</strong> tracing, <span class="hl">LLM-as-a-judge evaluation pipelines</span>, and <strong>GitHub Actions</strong> CI/CD with automated quality gates.</p>
+                <p>My stack spans <strong>React</strong> frontends, async <strong>Python/Quart</strong> backends, <strong>Azure OpenAI</strong>, <strong>Azure AI Search</strong>, and <strong>LangGraph</strong> agentic orchestration. I draw on an optimisation and systems engineering background to ship <span class="hl">reliable ML products</span> from prototype to production.</p>
+            </div>
+    </section>
+
+    <!-- Core Skills Section -->
+    <section class="section" id="skills" aria-labelledby="skills-heading" role="region">
+            <h2 id="skills-heading">Core Skills</h2>
+            <div class="skills-grid">
+                <article class="skill-domain">
+                    <h3>LLM / GenAI</h3>
+                    <p><span class="hl">RAG</span> (chunking, reranking, hybrid retrieval), prompt engineering, guardrails, embeddings, vector search, summarisation, <span class="hl">grounded generation with citations</span>, agentic orchestration (<strong>LangGraph</strong>), intent classification, conditional routing.</p>
+                </article>
+                <article class="skill-domain">
+                    <h3>ML Engineering</h3>
+                    <p><strong>Arize Phoenix</strong> / <strong>OpenTelemetry</strong> tracing, <span class="hl">LLM-as-a-judge evaluation pipelines</span>, curated eval sets (normal, edge-case, adversarial), golden sets, regression testing, quality dashboards, prompt/version tracking.</p>
+                </article>
+                <article class="skill-domain">
+                    <h3>Backend</h3>
+                    <p>Python, <strong>Quart</strong> (async), FastAPI, Node.js, REST APIs, <strong>pytest</strong>, data pipelines, unit/integration testing, C#/.NET.</p>
+                </article>
+                <article class="skill-domain">
+                    <h3>Cloud / Infra</h3>
+                    <p><strong>Azure</strong> (OpenAI, AI Search, Blob Storage, Cosmos DB, Key Vault, Document Intelligence), <strong>AWS</strong>, Docker, GitHub Actions, managed identity, secrets management, observability (logs/metrics/traces).</p>
+                </article>
+                <article class="skill-domain">
+                    <h3>ML Frameworks</h3>
+                    <p>PyTorch, TensorFlow, Hugging Face.</p>
+                </article>
+                <article class="skill-domain">
+                    <h3>Bonus &amp; Languages</h3>
+                    <p>Linear programming, heuristic algorithms (LNS), operations research, <span class="hl">scheduling optimisation</span>, system modelling. Languages: English, Mandarin.</p>
+                </article>
+            </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience" aria-labelledby="experience-heading" role="region">
+            <h2 id="experience-heading">Professional Experience</h2>
+            <div class="experience-timeline">
+            <div class="experience-item">
+                <h3>Graduate IS&amp;T Engineer (Applied AI/ML)</h3>
+                <div class="date">Aug 2024 – Present</div>
+                <div class="location">Rio Tinto, Brisbane, Australia · On-site</div>
+                <div class="exp-tags" aria-label="Key technologies">
+                    <span>Python</span><span>React</span><span>Quart</span><span>Azure OpenAI</span><span>Azure AI Search</span><span>Arize Phoenix</span><span>OpenTelemetry</span><span>LangGraph</span><span>GitHub Actions</span><span>AWS</span><span>Cosmos DB</span><span>C#/.NET</span><span>Linear Programming</span>
+                </div>
+
+                <h4 class="rotation-heading">Rotation 3 — Applied ML / LLM Engineering</h4>
+                <ul>
+                    <li>Built and productionised <span class="hl">internal LLM applications</span> for enterprise use, with a <strong>React</strong> frontend and async <strong>Python/Quart</strong> backend, covering <span class="hl">retrieval-grounded Q&amp;A</span>, <span class="hl">document summarisation</span>, <span class="hl">agentic chat workflows</span>, and <span class="hl">interactive summary refinement</span>.</li>
+                    <li>Designed and implemented <span class="hl">RAG pipelines</span> using <strong>Azure OpenAI</strong> for query optimisation and answer generation, <strong>Azure AI Search</strong> for text, vector, and hybrid retrieval, and <span class="hl">grounded generation with citations</span>.</li>
+                    <li>Integrated <strong>Arize Phoenix</strong> / <strong>OpenTelemetry</strong> tracing across the <span class="hl">end-to-end LLM pipeline</span> — query optimisation, retrieval, vector embedding spans, and final answer generation — with detailed telemetry for prompts, model outputs, retrieved documents, latency, token usage, and user/session metadata.</li>
+                    <li>Built <span class="hl">offline evaluation pipelines</span> using <strong>LLM-as-a-judge</strong> with evaluators for retrieval relevance, hallucination/grounding, correctness, toxicity, helpfulness, and refusal behaviour, against <span class="hl">curated prompt sets</span> covering normal queries, edge cases, and adversarial/off-topic inputs.</li>
+                    <li>Developed <strong>GitHub Actions</strong> <span class="hl">CI/CD pipelines</span> for backend unit tests and AI quality checks on push/PR triggers, plus <span class="hl">scheduled monthly evaluation runs</span>, with <strong>Azure CLI</strong> and <span class="hl">managed identity authentication</span>, artifact export, and CI summaries for rapid regression review.</li>
+                    <li>Wrote <strong>pytest</strong>-based tests for backend utilities, async chat logic, and tracing-integrated components, using mocking for <strong>OpenTelemetry</strong>, <strong>Arize</strong>, and external services to ensure reliability in <span class="hl">local and CI environments</span>.</li>
+                    <li>Built <strong>LangGraph</strong>-based orchestration for <span class="hl">agentic summary refinement workflows</span>, including <span class="hl">intent classification</span>, <span class="hl">conditional routing</span>, undo/restore flows, and section-level re-summarisation from raw source chapters.</li>
+                    <li>Worked with enterprise <strong>Azure</strong> data services including <strong>Azure Blob Storage</strong>, <strong>Cosmos DB</strong>, <strong>Azure Key Vault</strong>, and <strong>Azure Document Intelligence</strong>.</li>
+                    <li>Contributed to <span class="hl">production-readiness</span> through observability, evaluation infrastructure, <span class="hl">deployment quality gates</span>, and AI system reliability.</li>
+                </ul>
+
+                <h4 class="rotation-heading">Rotation 2 — Optimisation R&amp;D</h4>
+                <ul>
+                    <li>Prototyped <strong>linear programming</strong> and <span class="hl">heuristic approaches</span> for scheduling and optimisation problems.</li>
+                    <li>Benchmarked alternative methods comparing <span class="hl">runtime</span>, <span class="hl">solution quality</span>, and <span class="hl">maintainability</span>, with reproducible evaluation outputs.</li>
+                    <li>Productionised successful prototypes into maintainable code, building practical exposure to <strong>operations research</strong>, <span class="hl">LP-based approaches</span>, and <span class="hl">heuristic improvement workflows</span>.</li>
+                </ul>
+
+                <h4 class="rotation-heading">Rotation 1 — Software Engineering</h4>
+                <ul>
+                    <li>Delivered features for a <span class="hl">long-horizon mine-planning optimisation</span> desktop application in <strong>C#/.NET</strong>, including statistical and linear optimisation components.</li>
+                    <li>Refactored core modules to improve <span class="hl">reliability</span>, <span class="hl">maintainability</span>, and <span class="hl">production code quality</span>.</li>
+                    <li>Expanded <span class="hl">automated unit-test coverage</span> for key production paths, building experience in <span class="hl">enterprise software delivery</span> for industrial optimisation systems.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Research Assistant (Contract)</h3>
+                <div class="date">Apr 2023 – Jul 2023</div>
+                <div class="location">QUT (Queensland University of Technology), Brisbane, Australia · On-site</div>
+                <div class="exp-tags" aria-label="Key technologies">
+                    <span>Python</span><span>Pandas</span><span>Data Cleaning</span><span>Web Scraping</span><span>Documentation</span>
+                </div>
+                <ul>
+                    <li>Collected and consolidated datasets from <span class="hl">public repositories</span> and <span class="hl">targeted web sources</span>, ensuring ethical acquisition and compliance with usage terms.</li>
+                    <li>Cleaned and normalised <span class="hl">heterogeneous raw data</span> — format alignment, outlier handling, and schema reconciliation — improving <span class="hl">downstream analysis reliability</span> through reproducible preprocessing.</li>
+                    <li>Built <span class="hl">data-preparation scripts</span> and documented collection workflows, transformation logic, and <span class="hl">repeatable processing steps</span> to support transparency and reproducibility in research.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Sessional Tutor</h3>
+                <div class="date">2023 – Present</div>
+                <div class="location">QUT (Queensland University of Technology), Brisbane, Australia</div>
+                <div class="exp-tags" aria-label="Key areas">
+                    <span>Teaching</span><span>Computational Thinking</span><span>Programming</span><span>Mentoring</span>
+                </div>
+                <ul>
+                    <li>Tutored computing and software-related courses, including <strong>QUT008: Think Like a Computer and Change the World</strong>.</li>
+                    <li>Supported undergraduate students in <span class="hl">computational thinking</span>, <span class="hl">programming concepts</span>, problem solving, and coursework understanding.</li>
+                    <li>Provided <span class="hl">mentoring and guidance</span> in learning technical material while balancing industry and research commitments.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>She Codes Plus Program Participant</h3>
+                <div class="date">Sep 2025 – Present</div>
+                <div class="location">She Codes Australia, Brisbane, Australia · Part-time</div>
+                <div class="exp-tags" aria-label="Key technologies">
+                    <span>HTML</span><span>CSS</span><span>Python</span><span>Django</span><span>React</span><span>Git/GitHub</span>
+                </div>
+                <ul>
+                    <li>Selected as a <strong>Rio Tinto</strong>-sponsored <span class="hl">full scholarship recipient</span> for the She Codes Plus program, completing project-based learning with <span class="hl">industry mentorship</span> in a 6-month part-time format.</li>
+                    <li>Built portfolio projects using <strong>HTML</strong>, <strong>CSS</strong>, <strong>Python</strong>, <strong>Django</strong>, and <strong>React</strong>.</li>
+                    <li>Strengthened <span class="hl">full-stack workflows</span> including <strong>Git/GitHub</strong> version control, deployment, database and API integration, debugging, and testing.</li>
+                </ul>
+            </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+    <section class="section" id="education" aria-labelledby="education-heading" role="region">
+            <h2 id="education-heading">Education</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <h3>Master of Philosophy (MPhil) – Biomedical Engineering &amp; Computer Science</h3>
+                    <div class="date">Aug 2023 – Sep 2025</div>
+                    <div class="location">Queensland University of Technology (QUT)</div>
+                    <div class="edu-tags" aria-label="Key focus areas">
+                        <span>Deep Learning</span><span>3D Point Clouds</span><span>Semi-Supervised</span><span>Uncertainty</span><span>Medical Imaging</span><span>Python</span>
+                    </div>
+                    <p class="research-topic"><strong>Research Topic:</strong> <a class="pub-link" href="https://eprints.qut.edu.au/259810/" target="_blank" rel="noopener" aria-label="Open QUT ePrints page for this research topic">Deep Semi-Supervised Point Cloud-Based Models with Uncertainty Awareness for Efficient Abnormality Detection in 3D Medical Imaging</a></p>
+                    <div class="edu-awards" aria-label="Scholarship awarded during MPhil">
+                        <h4 class="award-heading">Scholarship</h4>
+                        <ul class="award-list">
+                            <li class="award-item">
+                                <div class="award-main"><strong>Trustworthy Deep Learning for Biomedical Engineering – MPhil Scholarship</strong></div>
+                                <div class="award-meta">Queensland University of Technology (QUT) · Aug 2023</div>
+                                <p class="award-desc">Competitive full-time MPhil scholarship supporting research into deep semi‑supervised, uncertainty‑aware 3D medical imaging models.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <h3>Bachelor of Engineering (Software) – First Class Honours</h3>
+                    <div class="date">Feb 2019 – Jul 2023</div>
+                    <div class="location">Queensland University of Technology (QUT)</div>
+                    <div class="edu-tags" aria-label="Core strengths">
+                        <span>Software Engineering</span><span>Algorithms</span><span>Systems Design</span><span>Data Structures</span><span>Machine Learning Foundations</span><span>Databases</span><span>Signals &amp; Systems</span><span>Telecommunications</span><span>Embedded Systems</span><span>Electrical Engineering Foundations</span>
+                    </div>
+                    <p class="honours"><strong>Honours:</strong> Awarded First Class Honours for academic excellence and research achievement.</p>
+                    <div class="edu-awards" aria-label="Awards achieved during Bachelor">
+                        <h4 class="award-heading">Awards</h4>
+                        <ul class="award-list">
+                            <li class="award-item">
+                                <div class="award-main"><strong>Bachelor of Engineering (Software Systems) – First Class Honours</strong></div>
+                                <div class="award-meta">Faculty of Engineering, QUT · Jul 2023</div>
+                                <p class="award-desc">Conferred for sustained academic distinction and high-impact honours research outcomes.</p>
+                            </li>
+                            <li class="award-item">
+                                <div class="award-main"><strong>Vacation Research Experience Scheme (2022/2023) – Best Poster Award</strong></div>
+                                <div class="award-meta">Faculty of Engineering, QUT · Feb 2023</div>
+                                <p class="award-desc">Recognised for excellence in communicating methodology and applied impact in medical imaging AI research.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+    <section class="section" id="publications" aria-labelledby="publications-heading" role="region">
+            <h2 id="publications-heading">Selected Publications</h2>
+            <ul class="pub-list publications-list">
+                <li class="pub-item">
+                    <div class="pub-title"><a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S2667305324000310" target="_blank" rel="noopener" aria-label="Open publication: MEFF – A Model Ensemble Feature Fusion Approach for Tackling Adversarial Attacks in Medical Imaging">MEFF — A Model Ensemble Feature Fusion Approach for Tackling Adversarial Attacks in Medical Imaging</a></div>
+                    <div class="pub-meta">Intelligent Systems with Applications · 2024</div>
+                </li>
+                <li class="pub-item">
+                    <div class="pub-title"><a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0952197623018110" target="_blank" rel="noopener" aria-label="Open publication: Reliable Deep Learning Framework for Ground Penetrating Radar Data to Locate Horizontal Variation in Levee Soil Compaction">Reliable Deep Learning Framework for Ground Penetrating Radar Data to Locate Horizontal Variation in Levee Soil Compaction</a></div>
+                    <div class="pub-meta">Engineering Applications of Artificial Intelligence · 2023</div>
+                </li>
+                <li class="pub-item">
+                    <div class="pub-title"><a class="pub-link" href="https://arxiv.org/abs/2308.08731" target="_blank" rel="noopener" aria-label="Open publication: Learning Through Guidance: Knowledge Distillation for Endoscopic Image Classification">Learning Through Guidance: Knowledge Distillation for Endoscopic Image Classification</a></div>
+                    <div class="pub-meta">arXiv · 2023</div>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Projects Section -->
+    <section class="section" id="projects" aria-labelledby="projects-heading" role="region">
+            <h2 id="projects-heading">Featured Projects</h2>
+            <div class="projects-timeline">
+                <div class="project-item">
+                    <h3>AI-driven Endoscopic Abnormality Detection</h3>
+                    <div class="date">Sep 2022 – Feb 2023</div>
+                    <div class="location">Student Researcher · QUT · Australia</div>
+                    <div class="project-tags" aria-label="Key technologies and domains">
+                        <span>Python</span><span>PyTorch</span><span>Deep Learning</span><span>Medical Imaging</span><span>Image Classification</span><span>Data Curation</span><span>Evaluation</span>
+                    </div>
+                    <p class="project-intro">Developed an end-to-end pipeline for endoscopic abnormality classification using public datasets.</p>
+                    <ul class="project-points">
+                        <li>Curated <strong>KVASIR</strong> and <strong>NERTHUS</strong> into a <span class="hl">reproducible pipeline</span> with consistent preprocessing and labels.</li>
+                        <li>Trained <strong>ResNet</strong> baselines, <span class="hl">transfer-learning models</span>, and <span class="hl">knowledge-distillation</span> variants in <strong>PyTorch</strong>.</li>
+                        <li>Evaluated performance with <span class="hl">accuracy, F1, AUC</span>, and confusion matrices to improve class-wise reliability.</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <h3>Autonomous UAV Target Detection &amp; Air Quality Payload</h3>
+                    <div class="date">Jul 2022 – Nov 2022</div>
+                    <div class="location">Student Researcher · QUT · Australia</div>
+                    <div class="project-tags" aria-label="Key technologies and domains">
+                        <span>Python</span><span>YOLOv5</span><span>Edge Computing</span><span>SoC</span><span>Object Detection</span><span>Dataset Labelling</span><span>Team Project</span>
+                    </div>
+                    <p class="project-intro">Built a UAV payload for onboard target detection and air-quality sensing.</p>
+                    <ul class="project-points">
+                        <li>Deployed <strong>YOLOv5</strong> on a System-on-Chip device for <span class="hl">near real-time edge inference</span>.</li>
+                        <li>Built a <span class="hl">data collection and labelling workflow</span> to improve robustness across lighting and scale variation.</li>
+                        <li>Tested deployment scenarios and documented <span class="hl">hardware/software trade-offs</span> for the team.</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <h3>Wildlife Species Recognition for Ecological Research</h3>
+                    <div class="date">Jan 2022 – Nov 2022</div>
+                    <div class="location">Student Researcher · QUT · Australia</div>
+                    <div class="project-tags" aria-label="Key technologies and domains">
+                        <span>Python</span><span>Representation Learning</span><span>K-Means</span><span>KNN</span><span>Clustering</span><span>Research Reporting</span>
+                    </div>
+                    <p class="project-intro">Investigated ML methods for wildlife species recognition in ecological datasets.</p>
+                    <ul class="project-points">
+                        <li>Compared <span class="hl">representation learning</span> and clustering baselines, including <strong>K-means</strong> and <strong>KNN</strong>-based methods.</li>
+                        <li>Documented <span class="hl">human-in-the-loop annotation</span> and retrieval considerations for practical deployment.</li>
+                        <li>Presented findings to academic stakeholders through <span class="hl">technical reports and presentations</span>.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards &amp; Activities Section -->
+    <section class="section" id="awards" aria-labelledby="awards-heading" role="region">
+            <h2 id="awards-heading">Awards &amp; Activities</h2>
+            <ul class="award-list awards-list">
+                <li class="award-item">
+                    <div class="award-main"><strong>MPhil Full Scholarship — Trustworthy Deep Learning for Biomedical Engineering</strong></div>
+                    <div class="award-meta">Queensland University of Technology · Aug 2023</div>
+                </li>
+                <li class="award-item">
+                    <div class="award-main"><strong>Best Poster Award — Vacation Research Experience Scheme (2022/2023)</strong></div>
+                    <div class="award-meta">Faculty of Engineering, QUT · Feb 2023</div>
+                </li>
+                <li class="award-item">
+                    <div class="award-main"><strong>Rio Tinto-Sponsored She Codes Plus Scholarship</strong></div>
+                    <div class="award-meta">She Codes Australia · Brisbane · Sep 2025</div>
+                </li>
+                <li class="award-item">
+                    <div class="award-main"><strong>Currently Building With</strong></div>
+                    <div class="award-meta">Vector databases, vision-language models, infrastructure as code, MLOps, and DataOps</div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contact" aria-label="Footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2026 Yubo Chen (Veronica).</p>
+        </div>
+    </footer>
+
+    <script>
+    // Theme toggle (night <-> day) + persistence
+    (function(){
+        const btn = document.getElementById('themeToggle');
+        const KEY = 'lp-theme';
+        const stored = localStorage.getItem(KEY);
+        function apply(theme){
+            if(theme === 'day') { document.documentElement.setAttribute('data-theme','day'); btn.textContent='Night Mode'; btn.setAttribute('aria-pressed','true'); }
+            else { document.documentElement.removeAttribute('data-theme'); btn.textContent='Day Mode'; btn.setAttribute('aria-pressed','false'); }
+        }
+        apply(stored);
+        btn.addEventListener('click', () => {
+            const day = document.documentElement.getAttribute('data-theme') === 'day';
+            const next = day ? 'night' : 'day';
+            if(next==='day') localStorage.setItem(KEY,'day'); else localStorage.removeItem(KEY);
+            apply(next==='day'?'day':null);
+        });
+    })();
+
+    // Starfield generation
+    (function(){
+        const container = document.querySelector('.cosmos');
+        if(!container) return;
+        const STAR_COUNT = 140; // Adjust for density
+        const frag = document.createDocumentFragment();
+        for(let i=0;i<STAR_COUNT;i++){
+            const s = document.createElement('div');
+            const size = (Math.random()*2 + 1).toFixed(2)+'px';
+            s.className='star';
+            s.style.setProperty('--sz', size);
+            s.style.left = (Math.random()*100).toFixed(3)+'%';
+            s.style.top = (Math.random()*100).toFixed(3)+'%';
+            s.style.setProperty('--op', (Math.random()*0.5 + 0.4).toFixed(2));
+            s.style.setProperty('--twinkleDur', (Math.random()*8 + 6).toFixed(2));
+            s.style.setProperty('--twinkleDelay', (Math.random()*8).toFixed(2));
+            frag.appendChild(s);
+        }
+        container.appendChild(frag);
+
+        // Shooting star scheduler
+        function shoot(){
+            const st = document.createElement('div');
+            st.className='shooting-star';
+            const x = Math.random()*window.innerWidth*0.4 - 150; // start region left-ish
+            const y = Math.random()*window.innerHeight*0.3 - 150; // start region top
+            st.style.setProperty('--sx', x+'px');
+            st.style.setProperty('--sy', y+'px');
+            container.appendChild(st);
+            setTimeout(()=> st.remove(), 1900);
+        }
+        let interval = setInterval(shoot, 6500 + Math.random()*3000);
+        // Respect reduced motion
+        const rm = window.matchMedia('(prefers-reduced-motion: reduce)');
+        function handleRM(){
+            if(rm.matches){ clearInterval(interval); }
+            else if(!interval){ interval = setInterval(shoot, 6500 + Math.random()*3000); }
+        }
+        rm.addEventListener('change', handleRM);
+    })();
+
+    // Active section highlighting via IntersectionObserver (improved: pick highest intersection ratio)
+    (function(){
+        const links = Array.from(document.querySelectorAll('.quick-nav .qn-link'));
+        const map = new Map(links.map(l => [l.getAttribute('href').slice(1), l]));
+        const activeClass = 'active';
+        let visible = {};
+        let ticking = false;
+        function setActive(){
+            ticking = false;
+            // Choose section with largest intersection ratio currently > 0
+            let bestId = null; let bestRatio = 0;
+            for(const id in visible){
+                const ratio = visible[id];
+                if(ratio > bestRatio){ bestRatio = ratio; bestId = id; }
+            }
+            if(bestId){
+                links.forEach(a => a.classList.remove(activeClass));
+                const link = map.get(bestId);
+                if(link) link.classList.add(activeClass);
+            }
+        }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const id = entry.target.id;
+                if(entry.isIntersecting) visible[id] = entry.intersectionRatio; else delete visible[id];
+            });
+            if(!ticking){
+                ticking = true;
+                requestAnimationFrame(setActive);
+            }
+        }, { root:null, rootMargin:'0px 0px -55% 0px', threshold:[0,0.1,0.25,0.5,0.75,1] });
+        ['about','summary','skills','experience','education','publications','projects','awards'].forEach(id => {
+            const el = document.getElementById(id);
+            if(el) observer.observe(el);
+        });
+        // Initialize state on load
+        window.addEventListener('load', () => setTimeout(()=>setActive(), 150));
+    })();
+
+    // Mobile accordion for skill groups (unchanged logic, adapted for theme)
+    (function(){
+        const mq = window.matchMedia('(max-width: 768px)');
+        function initAccordions(){
+            document.querySelectorAll('.sidebar-skill-group').forEach(group => {
+                const heading = group.querySelector('h5');
+                const list = group.querySelector('ul');
+                if(!heading || !list) return;
+                if(mq.matches){
+                    if(!heading.classList.contains('accordion-added')){
+                        heading.classList.add('accordion-added');
+                        list.style.maxHeight = '0px';
+                        list.style.overflow = 'hidden';
+                        list.style.transition = 'max-height 0.35s ease';
+                        heading.insertAdjacentHTML('beforeend','<span class="acc-indicator" aria-hidden="true">+</span>');
+                        heading.setAttribute('role','button');
+                        heading.setAttribute('tabindex','0');
+                        heading.setAttribute('aria-expanded','false');
+                        heading.addEventListener('click', toggle);
+                        heading.addEventListener('keydown', e=>{ if(e.key==='Enter' || e.key===' ') { e.preventDefault(); toggle.call(heading); } });
+                        function toggle(){
+                            const expanded = heading.getAttribute('aria-expanded')==='true';
+                            heading.setAttribute('aria-expanded', String(!expanded));
+                            const indicator = heading.querySelector('.acc-indicator');
+                            if(!expanded){
+                                list.style.maxHeight = list.scrollHeight + 'px';
+                                indicator.textContent = '–';
+                            } else {
+                                list.style.maxHeight = '0px';
+                                indicator.textContent = '+';
+                            }
+                        }
+                    }
+                } else {
+                    list.style.maxHeight = 'none';
+                    const ind = heading.querySelector('.acc-indicator');
+                    if(ind) ind.remove();
+                    heading.removeAttribute('role');
+                    heading.removeAttribute('tabindex');
+                    heading.removeAttribute('aria-expanded');
+                }
+            });
+        }
+        initAccordions();
+        window.addEventListener('resize', initAccordions);
+    })();
+    // Inject Tenor embed script once (if not already present)
+    (function(){
+        if(document.querySelector('script[src*="tenor.com/embed.js"]')) return;
+        const s = document.createElement('script');
+        s.src = 'https://tenor.com/embed.js';
+        s.async = true;
+        document.body.appendChild(s);
+    })();
+    </script>
+</body>
+</html>

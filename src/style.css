@@ -1142,6 +1142,37 @@ ul {
     background: linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
 }
 .experience-item h3, .education-item h3, .project-item h3 { color: var(--lp-accent-alt); }
+.rotation-heading {
+    color: var(--lp-star-gold, #f7e7a1);
+    font-size: .95rem;
+    font-weight: 600;
+    margin-top: 1.3rem;
+    margin-bottom: .5rem;
+    letter-spacing: .02em;
+}
+[data-theme='day'] .rotation-heading { color: #b85f00; }
+
+/* Inline keyword highlights — rose-petal accent for key concepts */
+.hl {
+    color: var(--lp-rose-petal-glow, #ff6b80);
+    font-weight: 600;
+}
+[data-theme='day'] .hl {
+    color: #c0392b;
+}
+
+/* Technology name highlights in content cards */
+.summary-card strong,
+.skill-domain strong,
+.about-card strong {
+    color: var(--lp-accent-alt);
+}
+[data-theme='day'] .summary-card strong,
+[data-theme='day'] .skill-domain strong,
+[data-theme='day'] .about-card strong {
+    color: #b85f00;
+}
+
 .experience-item ul li, .project-points li, .pub-item, .award-item {
     background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255,255,255,0.12);
